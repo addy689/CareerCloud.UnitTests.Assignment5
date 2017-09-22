@@ -359,7 +359,7 @@
       <wsdl:output wsaw:Action="http://tempuri.org/ICompany/UpdateCompanyProfileResponse" message="tns:ICompany_UpdateCompanyProfile_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="CompanyEndpoint" type="tns:ICompany">
+  <wsdl:binding name="BasicHttpBinding_ICompany" type="tns:ICompany">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="AddCompanyDescription">
       <soap:operation soapAction="http://tempuri.org/ICompany/AddCompanyDescription" style="document" />
@@ -678,7 +678,7 @@
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="Company">
-    <wsdl:port name="CompanyEndpoint" binding="tns:CompanyEndpoint">
+    <wsdl:port name="BasicHttpBinding_ICompany" binding="tns:BasicHttpBinding_ICompany">
       <soap:address location="http://localhost:8733/Design_Time_Addresses/CareerCloud.WCF/Company/" />
     </wsdl:port>
   </wsdl:service>

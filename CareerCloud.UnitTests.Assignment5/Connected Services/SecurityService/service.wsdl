@@ -209,7 +209,7 @@
       <wsdl:output wsaw:Action="http://tempuri.org/ISecurity/UpdateSecurityRoleResponse" message="tns:ISecurity_UpdateSecurityRole_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="SecurityEndpoint" type="tns:ISecurity">
+  <wsdl:binding name="BasicHttpBinding_ISecurity" type="tns:ISecurity">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="AddSecurityLogin">
       <soap:operation soapAction="http://tempuri.org/ISecurity/AddSecurityLogin" style="document" />
@@ -393,7 +393,7 @@
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="Security">
-    <wsdl:port name="SecurityEndpoint" binding="tns:SecurityEndpoint">
+    <wsdl:port name="BasicHttpBinding_ISecurity" binding="tns:BasicHttpBinding_ISecurity">
       <soap:address location="http://localhost:8733/Design_Time_Addresses/CareerCloud.WCF/Security/" />
     </wsdl:port>
   </wsdl:service>

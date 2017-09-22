@@ -4,7 +4,7 @@
   <xs:element name="AddApplicantEducation">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q1:ArrayOfApplicantEducationPoco" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q1:ArrayOfApplicantEducationPoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -28,7 +28,7 @@
   <xs:element name="GetSingleApplicantEducation">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -42,7 +42,7 @@
   <xs:element name="RemoveApplicantEducation">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q4:ArrayOfApplicantEducationPoco" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q4:ArrayOfApplicantEducationPoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -54,7 +54,7 @@
   <xs:element name="UpdateApplicantEducation">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q5:ArrayOfApplicantEducationPoco" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q5:ArrayOfApplicantEducationPoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -66,7 +66,7 @@
   <xs:element name="AddApplicantJobApplication">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q6:ArrayOfApplicantJobApplicationPoco" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q6:ArrayOfApplicantJobApplicationPoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -90,7 +90,7 @@
   <xs:element name="GetSingleApplicantJobApplication">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -104,7 +104,7 @@
   <xs:element name="RemoveApplicantJobApplication">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q9:ArrayOfApplicantJobApplicationPoco" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q9:ArrayOfApplicantJobApplicationPoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -116,7 +116,7 @@
   <xs:element name="UpdateApplicantJobApplication">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q10:ArrayOfApplicantJobApplicationPoco" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q10:ArrayOfApplicantJobApplicationPoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -128,7 +128,7 @@
   <xs:element name="AddApplicantProfile">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q11:ArrayOfApplicantProfilePoco" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q11:ArrayOfApplicantProfilePoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -152,7 +152,7 @@
   <xs:element name="GetSingleApplicantProfile">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -166,7 +166,7 @@
   <xs:element name="RemoveApplicantProfile">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q14:ArrayOfApplicantProfilePoco" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q14:ArrayOfApplicantProfilePoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -178,7 +178,7 @@
   <xs:element name="UpdateApplicantProfile">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q15:ArrayOfApplicantProfilePoco" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q15:ArrayOfApplicantProfilePoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -190,7 +190,7 @@
   <xs:element name="AddApplicantResume">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q16:ArrayOfApplicantResumePoco" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q16:ArrayOfApplicantResumePoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -214,7 +214,7 @@
   <xs:element name="GetSingleApplicantResume">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -228,7 +228,7 @@
   <xs:element name="RemoveApplicantResume">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q19:ArrayOfApplicantResumePoco" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q19:ArrayOfApplicantResumePoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -240,7 +240,7 @@
   <xs:element name="UpdateApplicantResume">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q20:ArrayOfApplicantResumePoco" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q20:ArrayOfApplicantResumePoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -252,7 +252,7 @@
   <xs:element name="AddApplicantSkill">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q21:ArrayOfApplicantSkillPoco" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q21:ArrayOfApplicantSkillPoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -276,7 +276,7 @@
   <xs:element name="GetSingleApplicantSkill">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -290,7 +290,7 @@
   <xs:element name="RemoveApplicantSkill">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q24:ArrayOfApplicantSkillPoco" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q24:ArrayOfApplicantSkillPoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -302,7 +302,7 @@
   <xs:element name="UpdateApplicantSkill">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q25:ArrayOfApplicantSkillPoco" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q25:ArrayOfApplicantSkillPoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -314,7 +314,7 @@
   <xs:element name="AddApplicantWorkHistory">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q26:ArrayOfApplicantWorkHistoryPoco" />
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q26:ArrayOfApplicantWorkHistoryPoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -338,7 +338,7 @@
   <xs:element name="GetSingleApplicantWorkHistory">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -352,7 +352,7 @@
   <xs:element name="RemoveApplicantWorkHistory">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q29:ArrayOfApplicantWorkHistoryPoco" />
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q29:ArrayOfApplicantWorkHistoryPoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -364,7 +364,7 @@
   <xs:element name="UpdateApplicantWorkHistory">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="items" nillable="true" type="q30:ArrayOfApplicantWorkHistoryPoco" />
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" minOccurs="0" name="pocos" nillable="true" type="q30:ArrayOfApplicantWorkHistoryPoco" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

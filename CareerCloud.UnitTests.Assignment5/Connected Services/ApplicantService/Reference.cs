@@ -16,10 +16,10 @@ namespace CareerCloud.UnitTests.Assignment5.ApplicantService {
     public interface IApplicant {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/AddApplicantEducation", ReplyAction="http://tempuri.org/IApplicant/AddApplicantEducationResponse")]
-        void AddApplicantEducation(CareerCloud.Pocos.ApplicantEducationPoco[] items);
+        void AddApplicantEducation(CareerCloud.Pocos.ApplicantEducationPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/AddApplicantEducation", ReplyAction="http://tempuri.org/IApplicant/AddApplicantEducationResponse")]
-        System.Threading.Tasks.Task AddApplicantEducationAsync(CareerCloud.Pocos.ApplicantEducationPoco[] items);
+        System.Threading.Tasks.Task AddApplicantEducationAsync(CareerCloud.Pocos.ApplicantEducationPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetAllApplicantEducation", ReplyAction="http://tempuri.org/IApplicant/GetAllApplicantEducationResponse")]
         CareerCloud.Pocos.ApplicantEducationPoco[] GetAllApplicantEducation();
@@ -28,28 +28,28 @@ namespace CareerCloud.UnitTests.Assignment5.ApplicantService {
         System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantEducationPoco[]> GetAllApplicantEducationAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetSingleApplicantEducation", ReplyAction="http://tempuri.org/IApplicant/GetSingleApplicantEducationResponse")]
-        CareerCloud.Pocos.ApplicantEducationPoco GetSingleApplicantEducation(string Id);
+        CareerCloud.Pocos.ApplicantEducationPoco GetSingleApplicantEducation(string id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetSingleApplicantEducation", ReplyAction="http://tempuri.org/IApplicant/GetSingleApplicantEducationResponse")]
-        System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantEducationPoco> GetSingleApplicantEducationAsync(string Id);
+        System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantEducationPoco> GetSingleApplicantEducationAsync(string id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/RemoveApplicantEducation", ReplyAction="http://tempuri.org/IApplicant/RemoveApplicantEducationResponse")]
-        void RemoveApplicantEducation(CareerCloud.Pocos.ApplicantEducationPoco[] items);
+        void RemoveApplicantEducation(CareerCloud.Pocos.ApplicantEducationPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/RemoveApplicantEducation", ReplyAction="http://tempuri.org/IApplicant/RemoveApplicantEducationResponse")]
-        System.Threading.Tasks.Task RemoveApplicantEducationAsync(CareerCloud.Pocos.ApplicantEducationPoco[] items);
+        System.Threading.Tasks.Task RemoveApplicantEducationAsync(CareerCloud.Pocos.ApplicantEducationPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/UpdateApplicantEducation", ReplyAction="http://tempuri.org/IApplicant/UpdateApplicantEducationResponse")]
-        void UpdateApplicantEducation(CareerCloud.Pocos.ApplicantEducationPoco[] items);
+        void UpdateApplicantEducation(CareerCloud.Pocos.ApplicantEducationPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/UpdateApplicantEducation", ReplyAction="http://tempuri.org/IApplicant/UpdateApplicantEducationResponse")]
-        System.Threading.Tasks.Task UpdateApplicantEducationAsync(CareerCloud.Pocos.ApplicantEducationPoco[] items);
+        System.Threading.Tasks.Task UpdateApplicantEducationAsync(CareerCloud.Pocos.ApplicantEducationPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/AddApplicantJobApplication", ReplyAction="http://tempuri.org/IApplicant/AddApplicantJobApplicationResponse")]
-        void AddApplicantJobApplication(CareerCloud.Pocos.ApplicantJobApplicationPoco[] items);
+        void AddApplicantJobApplication(CareerCloud.Pocos.ApplicantJobApplicationPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/AddApplicantJobApplication", ReplyAction="http://tempuri.org/IApplicant/AddApplicantJobApplicationResponse")]
-        System.Threading.Tasks.Task AddApplicantJobApplicationAsync(CareerCloud.Pocos.ApplicantJobApplicationPoco[] items);
+        System.Threading.Tasks.Task AddApplicantJobApplicationAsync(CareerCloud.Pocos.ApplicantJobApplicationPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetAllApplicantJobApplication", ReplyAction="http://tempuri.org/IApplicant/GetAllApplicantJobApplicationResponse")]
         CareerCloud.Pocos.ApplicantJobApplicationPoco[] GetAllApplicantJobApplication();
@@ -58,28 +58,28 @@ namespace CareerCloud.UnitTests.Assignment5.ApplicantService {
         System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantJobApplicationPoco[]> GetAllApplicantJobApplicationAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetSingleApplicantJobApplication", ReplyAction="http://tempuri.org/IApplicant/GetSingleApplicantJobApplicationResponse")]
-        CareerCloud.Pocos.ApplicantJobApplicationPoco GetSingleApplicantJobApplication(string Id);
+        CareerCloud.Pocos.ApplicantJobApplicationPoco GetSingleApplicantJobApplication(string id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetSingleApplicantJobApplication", ReplyAction="http://tempuri.org/IApplicant/GetSingleApplicantJobApplicationResponse")]
-        System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantJobApplicationPoco> GetSingleApplicantJobApplicationAsync(string Id);
+        System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantJobApplicationPoco> GetSingleApplicantJobApplicationAsync(string id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/RemoveApplicantJobApplication", ReplyAction="http://tempuri.org/IApplicant/RemoveApplicantJobApplicationResponse")]
-        void RemoveApplicantJobApplication(CareerCloud.Pocos.ApplicantJobApplicationPoco[] items);
+        void RemoveApplicantJobApplication(CareerCloud.Pocos.ApplicantJobApplicationPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/RemoveApplicantJobApplication", ReplyAction="http://tempuri.org/IApplicant/RemoveApplicantJobApplicationResponse")]
-        System.Threading.Tasks.Task RemoveApplicantJobApplicationAsync(CareerCloud.Pocos.ApplicantJobApplicationPoco[] items);
+        System.Threading.Tasks.Task RemoveApplicantJobApplicationAsync(CareerCloud.Pocos.ApplicantJobApplicationPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/UpdateApplicantJobApplication", ReplyAction="http://tempuri.org/IApplicant/UpdateApplicantJobApplicationResponse")]
-        void UpdateApplicantJobApplication(CareerCloud.Pocos.ApplicantJobApplicationPoco[] items);
+        void UpdateApplicantJobApplication(CareerCloud.Pocos.ApplicantJobApplicationPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/UpdateApplicantJobApplication", ReplyAction="http://tempuri.org/IApplicant/UpdateApplicantJobApplicationResponse")]
-        System.Threading.Tasks.Task UpdateApplicantJobApplicationAsync(CareerCloud.Pocos.ApplicantJobApplicationPoco[] items);
+        System.Threading.Tasks.Task UpdateApplicantJobApplicationAsync(CareerCloud.Pocos.ApplicantJobApplicationPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/AddApplicantProfile", ReplyAction="http://tempuri.org/IApplicant/AddApplicantProfileResponse")]
-        void AddApplicantProfile(CareerCloud.Pocos.ApplicantProfilePoco[] items);
+        void AddApplicantProfile(CareerCloud.Pocos.ApplicantProfilePoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/AddApplicantProfile", ReplyAction="http://tempuri.org/IApplicant/AddApplicantProfileResponse")]
-        System.Threading.Tasks.Task AddApplicantProfileAsync(CareerCloud.Pocos.ApplicantProfilePoco[] items);
+        System.Threading.Tasks.Task AddApplicantProfileAsync(CareerCloud.Pocos.ApplicantProfilePoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetAllApplicantProfile", ReplyAction="http://tempuri.org/IApplicant/GetAllApplicantProfileResponse")]
         CareerCloud.Pocos.ApplicantProfilePoco[] GetAllApplicantProfile();
@@ -88,28 +88,28 @@ namespace CareerCloud.UnitTests.Assignment5.ApplicantService {
         System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantProfilePoco[]> GetAllApplicantProfileAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetSingleApplicantProfile", ReplyAction="http://tempuri.org/IApplicant/GetSingleApplicantProfileResponse")]
-        CareerCloud.Pocos.ApplicantProfilePoco GetSingleApplicantProfile(string Id);
+        CareerCloud.Pocos.ApplicantProfilePoco GetSingleApplicantProfile(string id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetSingleApplicantProfile", ReplyAction="http://tempuri.org/IApplicant/GetSingleApplicantProfileResponse")]
-        System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantProfilePoco> GetSingleApplicantProfileAsync(string Id);
+        System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantProfilePoco> GetSingleApplicantProfileAsync(string id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/RemoveApplicantProfile", ReplyAction="http://tempuri.org/IApplicant/RemoveApplicantProfileResponse")]
-        void RemoveApplicantProfile(CareerCloud.Pocos.ApplicantProfilePoco[] items);
+        void RemoveApplicantProfile(CareerCloud.Pocos.ApplicantProfilePoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/RemoveApplicantProfile", ReplyAction="http://tempuri.org/IApplicant/RemoveApplicantProfileResponse")]
-        System.Threading.Tasks.Task RemoveApplicantProfileAsync(CareerCloud.Pocos.ApplicantProfilePoco[] items);
+        System.Threading.Tasks.Task RemoveApplicantProfileAsync(CareerCloud.Pocos.ApplicantProfilePoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/UpdateApplicantProfile", ReplyAction="http://tempuri.org/IApplicant/UpdateApplicantProfileResponse")]
-        void UpdateApplicantProfile(CareerCloud.Pocos.ApplicantProfilePoco[] items);
+        void UpdateApplicantProfile(CareerCloud.Pocos.ApplicantProfilePoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/UpdateApplicantProfile", ReplyAction="http://tempuri.org/IApplicant/UpdateApplicantProfileResponse")]
-        System.Threading.Tasks.Task UpdateApplicantProfileAsync(CareerCloud.Pocos.ApplicantProfilePoco[] items);
+        System.Threading.Tasks.Task UpdateApplicantProfileAsync(CareerCloud.Pocos.ApplicantProfilePoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/AddApplicantResume", ReplyAction="http://tempuri.org/IApplicant/AddApplicantResumeResponse")]
-        void AddApplicantResume(CareerCloud.Pocos.ApplicantResumePoco[] items);
+        void AddApplicantResume(CareerCloud.Pocos.ApplicantResumePoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/AddApplicantResume", ReplyAction="http://tempuri.org/IApplicant/AddApplicantResumeResponse")]
-        System.Threading.Tasks.Task AddApplicantResumeAsync(CareerCloud.Pocos.ApplicantResumePoco[] items);
+        System.Threading.Tasks.Task AddApplicantResumeAsync(CareerCloud.Pocos.ApplicantResumePoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetAllApplicantResume", ReplyAction="http://tempuri.org/IApplicant/GetAllApplicantResumeResponse")]
         CareerCloud.Pocos.ApplicantResumePoco[] GetAllApplicantResume();
@@ -118,28 +118,28 @@ namespace CareerCloud.UnitTests.Assignment5.ApplicantService {
         System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantResumePoco[]> GetAllApplicantResumeAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetSingleApplicantResume", ReplyAction="http://tempuri.org/IApplicant/GetSingleApplicantResumeResponse")]
-        CareerCloud.Pocos.ApplicantResumePoco GetSingleApplicantResume(string Id);
+        CareerCloud.Pocos.ApplicantResumePoco GetSingleApplicantResume(string id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetSingleApplicantResume", ReplyAction="http://tempuri.org/IApplicant/GetSingleApplicantResumeResponse")]
-        System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantResumePoco> GetSingleApplicantResumeAsync(string Id);
+        System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantResumePoco> GetSingleApplicantResumeAsync(string id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/RemoveApplicantResume", ReplyAction="http://tempuri.org/IApplicant/RemoveApplicantResumeResponse")]
-        void RemoveApplicantResume(CareerCloud.Pocos.ApplicantResumePoco[] items);
+        void RemoveApplicantResume(CareerCloud.Pocos.ApplicantResumePoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/RemoveApplicantResume", ReplyAction="http://tempuri.org/IApplicant/RemoveApplicantResumeResponse")]
-        System.Threading.Tasks.Task RemoveApplicantResumeAsync(CareerCloud.Pocos.ApplicantResumePoco[] items);
+        System.Threading.Tasks.Task RemoveApplicantResumeAsync(CareerCloud.Pocos.ApplicantResumePoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/UpdateApplicantResume", ReplyAction="http://tempuri.org/IApplicant/UpdateApplicantResumeResponse")]
-        void UpdateApplicantResume(CareerCloud.Pocos.ApplicantResumePoco[] items);
+        void UpdateApplicantResume(CareerCloud.Pocos.ApplicantResumePoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/UpdateApplicantResume", ReplyAction="http://tempuri.org/IApplicant/UpdateApplicantResumeResponse")]
-        System.Threading.Tasks.Task UpdateApplicantResumeAsync(CareerCloud.Pocos.ApplicantResumePoco[] items);
+        System.Threading.Tasks.Task UpdateApplicantResumeAsync(CareerCloud.Pocos.ApplicantResumePoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/AddApplicantSkill", ReplyAction="http://tempuri.org/IApplicant/AddApplicantSkillResponse")]
-        void AddApplicantSkill(CareerCloud.Pocos.ApplicantSkillPoco[] items);
+        void AddApplicantSkill(CareerCloud.Pocos.ApplicantSkillPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/AddApplicantSkill", ReplyAction="http://tempuri.org/IApplicant/AddApplicantSkillResponse")]
-        System.Threading.Tasks.Task AddApplicantSkillAsync(CareerCloud.Pocos.ApplicantSkillPoco[] items);
+        System.Threading.Tasks.Task AddApplicantSkillAsync(CareerCloud.Pocos.ApplicantSkillPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetAllApplicantSkill", ReplyAction="http://tempuri.org/IApplicant/GetAllApplicantSkillResponse")]
         CareerCloud.Pocos.ApplicantSkillPoco[] GetAllApplicantSkill();
@@ -148,28 +148,28 @@ namespace CareerCloud.UnitTests.Assignment5.ApplicantService {
         System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantSkillPoco[]> GetAllApplicantSkillAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetSingleApplicantSkill", ReplyAction="http://tempuri.org/IApplicant/GetSingleApplicantSkillResponse")]
-        CareerCloud.Pocos.ApplicantSkillPoco GetSingleApplicantSkill(string Id);
+        CareerCloud.Pocos.ApplicantSkillPoco GetSingleApplicantSkill(string id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetSingleApplicantSkill", ReplyAction="http://tempuri.org/IApplicant/GetSingleApplicantSkillResponse")]
-        System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantSkillPoco> GetSingleApplicantSkillAsync(string Id);
+        System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantSkillPoco> GetSingleApplicantSkillAsync(string id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/RemoveApplicantSkill", ReplyAction="http://tempuri.org/IApplicant/RemoveApplicantSkillResponse")]
-        void RemoveApplicantSkill(CareerCloud.Pocos.ApplicantSkillPoco[] items);
+        void RemoveApplicantSkill(CareerCloud.Pocos.ApplicantSkillPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/RemoveApplicantSkill", ReplyAction="http://tempuri.org/IApplicant/RemoveApplicantSkillResponse")]
-        System.Threading.Tasks.Task RemoveApplicantSkillAsync(CareerCloud.Pocos.ApplicantSkillPoco[] items);
+        System.Threading.Tasks.Task RemoveApplicantSkillAsync(CareerCloud.Pocos.ApplicantSkillPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/UpdateApplicantSkill", ReplyAction="http://tempuri.org/IApplicant/UpdateApplicantSkillResponse")]
-        void UpdateApplicantSkill(CareerCloud.Pocos.ApplicantSkillPoco[] items);
+        void UpdateApplicantSkill(CareerCloud.Pocos.ApplicantSkillPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/UpdateApplicantSkill", ReplyAction="http://tempuri.org/IApplicant/UpdateApplicantSkillResponse")]
-        System.Threading.Tasks.Task UpdateApplicantSkillAsync(CareerCloud.Pocos.ApplicantSkillPoco[] items);
+        System.Threading.Tasks.Task UpdateApplicantSkillAsync(CareerCloud.Pocos.ApplicantSkillPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/AddApplicantWorkHistory", ReplyAction="http://tempuri.org/IApplicant/AddApplicantWorkHistoryResponse")]
-        void AddApplicantWorkHistory(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] items);
+        void AddApplicantWorkHistory(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/AddApplicantWorkHistory", ReplyAction="http://tempuri.org/IApplicant/AddApplicantWorkHistoryResponse")]
-        System.Threading.Tasks.Task AddApplicantWorkHistoryAsync(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] items);
+        System.Threading.Tasks.Task AddApplicantWorkHistoryAsync(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetAllApplicantWorkHistory", ReplyAction="http://tempuri.org/IApplicant/GetAllApplicantWorkHistoryResponse")]
         CareerCloud.Pocos.ApplicantWorkHistoryPoco[] GetAllApplicantWorkHistory();
@@ -178,22 +178,22 @@ namespace CareerCloud.UnitTests.Assignment5.ApplicantService {
         System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantWorkHistoryPoco[]> GetAllApplicantWorkHistoryAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetSingleApplicantWorkHistory", ReplyAction="http://tempuri.org/IApplicant/GetSingleApplicantWorkHistoryResponse")]
-        CareerCloud.Pocos.ApplicantWorkHistoryPoco GetSingleApplicantWorkHistory(string Id);
+        CareerCloud.Pocos.ApplicantWorkHistoryPoco GetSingleApplicantWorkHistory(string id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/GetSingleApplicantWorkHistory", ReplyAction="http://tempuri.org/IApplicant/GetSingleApplicantWorkHistoryResponse")]
-        System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantWorkHistoryPoco> GetSingleApplicantWorkHistoryAsync(string Id);
+        System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantWorkHistoryPoco> GetSingleApplicantWorkHistoryAsync(string id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/RemoveApplicantWorkHistory", ReplyAction="http://tempuri.org/IApplicant/RemoveApplicantWorkHistoryResponse")]
-        void RemoveApplicantWorkHistory(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] items);
+        void RemoveApplicantWorkHistory(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/RemoveApplicantWorkHistory", ReplyAction="http://tempuri.org/IApplicant/RemoveApplicantWorkHistoryResponse")]
-        System.Threading.Tasks.Task RemoveApplicantWorkHistoryAsync(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] items);
+        System.Threading.Tasks.Task RemoveApplicantWorkHistoryAsync(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/UpdateApplicantWorkHistory", ReplyAction="http://tempuri.org/IApplicant/UpdateApplicantWorkHistoryResponse")]
-        void UpdateApplicantWorkHistory(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] items);
+        void UpdateApplicantWorkHistory(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] pocos);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApplicant/UpdateApplicantWorkHistory", ReplyAction="http://tempuri.org/IApplicant/UpdateApplicantWorkHistoryResponse")]
-        System.Threading.Tasks.Task UpdateApplicantWorkHistoryAsync(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] items);
+        System.Threading.Tasks.Task UpdateApplicantWorkHistoryAsync(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] pocos);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -223,12 +223,12 @@ namespace CareerCloud.UnitTests.Assignment5.ApplicantService {
                 base(binding, remoteAddress) {
         }
         
-        public void AddApplicantEducation(CareerCloud.Pocos.ApplicantEducationPoco[] items) {
-            base.Channel.AddApplicantEducation(items);
+        public void AddApplicantEducation(CareerCloud.Pocos.ApplicantEducationPoco[] pocos) {
+            base.Channel.AddApplicantEducation(pocos);
         }
         
-        public System.Threading.Tasks.Task AddApplicantEducationAsync(CareerCloud.Pocos.ApplicantEducationPoco[] items) {
-            return base.Channel.AddApplicantEducationAsync(items);
+        public System.Threading.Tasks.Task AddApplicantEducationAsync(CareerCloud.Pocos.ApplicantEducationPoco[] pocos) {
+            return base.Channel.AddApplicantEducationAsync(pocos);
         }
         
         public CareerCloud.Pocos.ApplicantEducationPoco[] GetAllApplicantEducation() {
@@ -239,36 +239,36 @@ namespace CareerCloud.UnitTests.Assignment5.ApplicantService {
             return base.Channel.GetAllApplicantEducationAsync();
         }
         
-        public CareerCloud.Pocos.ApplicantEducationPoco GetSingleApplicantEducation(string Id) {
-            return base.Channel.GetSingleApplicantEducation(Id);
+        public CareerCloud.Pocos.ApplicantEducationPoco GetSingleApplicantEducation(string id) {
+            return base.Channel.GetSingleApplicantEducation(id);
         }
         
-        public System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantEducationPoco> GetSingleApplicantEducationAsync(string Id) {
-            return base.Channel.GetSingleApplicantEducationAsync(Id);
+        public System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantEducationPoco> GetSingleApplicantEducationAsync(string id) {
+            return base.Channel.GetSingleApplicantEducationAsync(id);
         }
         
-        public void RemoveApplicantEducation(CareerCloud.Pocos.ApplicantEducationPoco[] items) {
-            base.Channel.RemoveApplicantEducation(items);
+        public void RemoveApplicantEducation(CareerCloud.Pocos.ApplicantEducationPoco[] pocos) {
+            base.Channel.RemoveApplicantEducation(pocos);
         }
         
-        public System.Threading.Tasks.Task RemoveApplicantEducationAsync(CareerCloud.Pocos.ApplicantEducationPoco[] items) {
-            return base.Channel.RemoveApplicantEducationAsync(items);
+        public System.Threading.Tasks.Task RemoveApplicantEducationAsync(CareerCloud.Pocos.ApplicantEducationPoco[] pocos) {
+            return base.Channel.RemoveApplicantEducationAsync(pocos);
         }
         
-        public void UpdateApplicantEducation(CareerCloud.Pocos.ApplicantEducationPoco[] items) {
-            base.Channel.UpdateApplicantEducation(items);
+        public void UpdateApplicantEducation(CareerCloud.Pocos.ApplicantEducationPoco[] pocos) {
+            base.Channel.UpdateApplicantEducation(pocos);
         }
         
-        public System.Threading.Tasks.Task UpdateApplicantEducationAsync(CareerCloud.Pocos.ApplicantEducationPoco[] items) {
-            return base.Channel.UpdateApplicantEducationAsync(items);
+        public System.Threading.Tasks.Task UpdateApplicantEducationAsync(CareerCloud.Pocos.ApplicantEducationPoco[] pocos) {
+            return base.Channel.UpdateApplicantEducationAsync(pocos);
         }
         
-        public void AddApplicantJobApplication(CareerCloud.Pocos.ApplicantJobApplicationPoco[] items) {
-            base.Channel.AddApplicantJobApplication(items);
+        public void AddApplicantJobApplication(CareerCloud.Pocos.ApplicantJobApplicationPoco[] pocos) {
+            base.Channel.AddApplicantJobApplication(pocos);
         }
         
-        public System.Threading.Tasks.Task AddApplicantJobApplicationAsync(CareerCloud.Pocos.ApplicantJobApplicationPoco[] items) {
-            return base.Channel.AddApplicantJobApplicationAsync(items);
+        public System.Threading.Tasks.Task AddApplicantJobApplicationAsync(CareerCloud.Pocos.ApplicantJobApplicationPoco[] pocos) {
+            return base.Channel.AddApplicantJobApplicationAsync(pocos);
         }
         
         public CareerCloud.Pocos.ApplicantJobApplicationPoco[] GetAllApplicantJobApplication() {
@@ -279,36 +279,36 @@ namespace CareerCloud.UnitTests.Assignment5.ApplicantService {
             return base.Channel.GetAllApplicantJobApplicationAsync();
         }
         
-        public CareerCloud.Pocos.ApplicantJobApplicationPoco GetSingleApplicantJobApplication(string Id) {
-            return base.Channel.GetSingleApplicantJobApplication(Id);
+        public CareerCloud.Pocos.ApplicantJobApplicationPoco GetSingleApplicantJobApplication(string id) {
+            return base.Channel.GetSingleApplicantJobApplication(id);
         }
         
-        public System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantJobApplicationPoco> GetSingleApplicantJobApplicationAsync(string Id) {
-            return base.Channel.GetSingleApplicantJobApplicationAsync(Id);
+        public System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantJobApplicationPoco> GetSingleApplicantJobApplicationAsync(string id) {
+            return base.Channel.GetSingleApplicantJobApplicationAsync(id);
         }
         
-        public void RemoveApplicantJobApplication(CareerCloud.Pocos.ApplicantJobApplicationPoco[] items) {
-            base.Channel.RemoveApplicantJobApplication(items);
+        public void RemoveApplicantJobApplication(CareerCloud.Pocos.ApplicantJobApplicationPoco[] pocos) {
+            base.Channel.RemoveApplicantJobApplication(pocos);
         }
         
-        public System.Threading.Tasks.Task RemoveApplicantJobApplicationAsync(CareerCloud.Pocos.ApplicantJobApplicationPoco[] items) {
-            return base.Channel.RemoveApplicantJobApplicationAsync(items);
+        public System.Threading.Tasks.Task RemoveApplicantJobApplicationAsync(CareerCloud.Pocos.ApplicantJobApplicationPoco[] pocos) {
+            return base.Channel.RemoveApplicantJobApplicationAsync(pocos);
         }
         
-        public void UpdateApplicantJobApplication(CareerCloud.Pocos.ApplicantJobApplicationPoco[] items) {
-            base.Channel.UpdateApplicantJobApplication(items);
+        public void UpdateApplicantJobApplication(CareerCloud.Pocos.ApplicantJobApplicationPoco[] pocos) {
+            base.Channel.UpdateApplicantJobApplication(pocos);
         }
         
-        public System.Threading.Tasks.Task UpdateApplicantJobApplicationAsync(CareerCloud.Pocos.ApplicantJobApplicationPoco[] items) {
-            return base.Channel.UpdateApplicantJobApplicationAsync(items);
+        public System.Threading.Tasks.Task UpdateApplicantJobApplicationAsync(CareerCloud.Pocos.ApplicantJobApplicationPoco[] pocos) {
+            return base.Channel.UpdateApplicantJobApplicationAsync(pocos);
         }
         
-        public void AddApplicantProfile(CareerCloud.Pocos.ApplicantProfilePoco[] items) {
-            base.Channel.AddApplicantProfile(items);
+        public void AddApplicantProfile(CareerCloud.Pocos.ApplicantProfilePoco[] pocos) {
+            base.Channel.AddApplicantProfile(pocos);
         }
         
-        public System.Threading.Tasks.Task AddApplicantProfileAsync(CareerCloud.Pocos.ApplicantProfilePoco[] items) {
-            return base.Channel.AddApplicantProfileAsync(items);
+        public System.Threading.Tasks.Task AddApplicantProfileAsync(CareerCloud.Pocos.ApplicantProfilePoco[] pocos) {
+            return base.Channel.AddApplicantProfileAsync(pocos);
         }
         
         public CareerCloud.Pocos.ApplicantProfilePoco[] GetAllApplicantProfile() {
@@ -319,36 +319,36 @@ namespace CareerCloud.UnitTests.Assignment5.ApplicantService {
             return base.Channel.GetAllApplicantProfileAsync();
         }
         
-        public CareerCloud.Pocos.ApplicantProfilePoco GetSingleApplicantProfile(string Id) {
-            return base.Channel.GetSingleApplicantProfile(Id);
+        public CareerCloud.Pocos.ApplicantProfilePoco GetSingleApplicantProfile(string id) {
+            return base.Channel.GetSingleApplicantProfile(id);
         }
         
-        public System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantProfilePoco> GetSingleApplicantProfileAsync(string Id) {
-            return base.Channel.GetSingleApplicantProfileAsync(Id);
+        public System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantProfilePoco> GetSingleApplicantProfileAsync(string id) {
+            return base.Channel.GetSingleApplicantProfileAsync(id);
         }
         
-        public void RemoveApplicantProfile(CareerCloud.Pocos.ApplicantProfilePoco[] items) {
-            base.Channel.RemoveApplicantProfile(items);
+        public void RemoveApplicantProfile(CareerCloud.Pocos.ApplicantProfilePoco[] pocos) {
+            base.Channel.RemoveApplicantProfile(pocos);
         }
         
-        public System.Threading.Tasks.Task RemoveApplicantProfileAsync(CareerCloud.Pocos.ApplicantProfilePoco[] items) {
-            return base.Channel.RemoveApplicantProfileAsync(items);
+        public System.Threading.Tasks.Task RemoveApplicantProfileAsync(CareerCloud.Pocos.ApplicantProfilePoco[] pocos) {
+            return base.Channel.RemoveApplicantProfileAsync(pocos);
         }
         
-        public void UpdateApplicantProfile(CareerCloud.Pocos.ApplicantProfilePoco[] items) {
-            base.Channel.UpdateApplicantProfile(items);
+        public void UpdateApplicantProfile(CareerCloud.Pocos.ApplicantProfilePoco[] pocos) {
+            base.Channel.UpdateApplicantProfile(pocos);
         }
         
-        public System.Threading.Tasks.Task UpdateApplicantProfileAsync(CareerCloud.Pocos.ApplicantProfilePoco[] items) {
-            return base.Channel.UpdateApplicantProfileAsync(items);
+        public System.Threading.Tasks.Task UpdateApplicantProfileAsync(CareerCloud.Pocos.ApplicantProfilePoco[] pocos) {
+            return base.Channel.UpdateApplicantProfileAsync(pocos);
         }
         
-        public void AddApplicantResume(CareerCloud.Pocos.ApplicantResumePoco[] items) {
-            base.Channel.AddApplicantResume(items);
+        public void AddApplicantResume(CareerCloud.Pocos.ApplicantResumePoco[] pocos) {
+            base.Channel.AddApplicantResume(pocos);
         }
         
-        public System.Threading.Tasks.Task AddApplicantResumeAsync(CareerCloud.Pocos.ApplicantResumePoco[] items) {
-            return base.Channel.AddApplicantResumeAsync(items);
+        public System.Threading.Tasks.Task AddApplicantResumeAsync(CareerCloud.Pocos.ApplicantResumePoco[] pocos) {
+            return base.Channel.AddApplicantResumeAsync(pocos);
         }
         
         public CareerCloud.Pocos.ApplicantResumePoco[] GetAllApplicantResume() {
@@ -359,36 +359,36 @@ namespace CareerCloud.UnitTests.Assignment5.ApplicantService {
             return base.Channel.GetAllApplicantResumeAsync();
         }
         
-        public CareerCloud.Pocos.ApplicantResumePoco GetSingleApplicantResume(string Id) {
-            return base.Channel.GetSingleApplicantResume(Id);
+        public CareerCloud.Pocos.ApplicantResumePoco GetSingleApplicantResume(string id) {
+            return base.Channel.GetSingleApplicantResume(id);
         }
         
-        public System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantResumePoco> GetSingleApplicantResumeAsync(string Id) {
-            return base.Channel.GetSingleApplicantResumeAsync(Id);
+        public System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantResumePoco> GetSingleApplicantResumeAsync(string id) {
+            return base.Channel.GetSingleApplicantResumeAsync(id);
         }
         
-        public void RemoveApplicantResume(CareerCloud.Pocos.ApplicantResumePoco[] items) {
-            base.Channel.RemoveApplicantResume(items);
+        public void RemoveApplicantResume(CareerCloud.Pocos.ApplicantResumePoco[] pocos) {
+            base.Channel.RemoveApplicantResume(pocos);
         }
         
-        public System.Threading.Tasks.Task RemoveApplicantResumeAsync(CareerCloud.Pocos.ApplicantResumePoco[] items) {
-            return base.Channel.RemoveApplicantResumeAsync(items);
+        public System.Threading.Tasks.Task RemoveApplicantResumeAsync(CareerCloud.Pocos.ApplicantResumePoco[] pocos) {
+            return base.Channel.RemoveApplicantResumeAsync(pocos);
         }
         
-        public void UpdateApplicantResume(CareerCloud.Pocos.ApplicantResumePoco[] items) {
-            base.Channel.UpdateApplicantResume(items);
+        public void UpdateApplicantResume(CareerCloud.Pocos.ApplicantResumePoco[] pocos) {
+            base.Channel.UpdateApplicantResume(pocos);
         }
         
-        public System.Threading.Tasks.Task UpdateApplicantResumeAsync(CareerCloud.Pocos.ApplicantResumePoco[] items) {
-            return base.Channel.UpdateApplicantResumeAsync(items);
+        public System.Threading.Tasks.Task UpdateApplicantResumeAsync(CareerCloud.Pocos.ApplicantResumePoco[] pocos) {
+            return base.Channel.UpdateApplicantResumeAsync(pocos);
         }
         
-        public void AddApplicantSkill(CareerCloud.Pocos.ApplicantSkillPoco[] items) {
-            base.Channel.AddApplicantSkill(items);
+        public void AddApplicantSkill(CareerCloud.Pocos.ApplicantSkillPoco[] pocos) {
+            base.Channel.AddApplicantSkill(pocos);
         }
         
-        public System.Threading.Tasks.Task AddApplicantSkillAsync(CareerCloud.Pocos.ApplicantSkillPoco[] items) {
-            return base.Channel.AddApplicantSkillAsync(items);
+        public System.Threading.Tasks.Task AddApplicantSkillAsync(CareerCloud.Pocos.ApplicantSkillPoco[] pocos) {
+            return base.Channel.AddApplicantSkillAsync(pocos);
         }
         
         public CareerCloud.Pocos.ApplicantSkillPoco[] GetAllApplicantSkill() {
@@ -399,36 +399,36 @@ namespace CareerCloud.UnitTests.Assignment5.ApplicantService {
             return base.Channel.GetAllApplicantSkillAsync();
         }
         
-        public CareerCloud.Pocos.ApplicantSkillPoco GetSingleApplicantSkill(string Id) {
-            return base.Channel.GetSingleApplicantSkill(Id);
+        public CareerCloud.Pocos.ApplicantSkillPoco GetSingleApplicantSkill(string id) {
+            return base.Channel.GetSingleApplicantSkill(id);
         }
         
-        public System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantSkillPoco> GetSingleApplicantSkillAsync(string Id) {
-            return base.Channel.GetSingleApplicantSkillAsync(Id);
+        public System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantSkillPoco> GetSingleApplicantSkillAsync(string id) {
+            return base.Channel.GetSingleApplicantSkillAsync(id);
         }
         
-        public void RemoveApplicantSkill(CareerCloud.Pocos.ApplicantSkillPoco[] items) {
-            base.Channel.RemoveApplicantSkill(items);
+        public void RemoveApplicantSkill(CareerCloud.Pocos.ApplicantSkillPoco[] pocos) {
+            base.Channel.RemoveApplicantSkill(pocos);
         }
         
-        public System.Threading.Tasks.Task RemoveApplicantSkillAsync(CareerCloud.Pocos.ApplicantSkillPoco[] items) {
-            return base.Channel.RemoveApplicantSkillAsync(items);
+        public System.Threading.Tasks.Task RemoveApplicantSkillAsync(CareerCloud.Pocos.ApplicantSkillPoco[] pocos) {
+            return base.Channel.RemoveApplicantSkillAsync(pocos);
         }
         
-        public void UpdateApplicantSkill(CareerCloud.Pocos.ApplicantSkillPoco[] items) {
-            base.Channel.UpdateApplicantSkill(items);
+        public void UpdateApplicantSkill(CareerCloud.Pocos.ApplicantSkillPoco[] pocos) {
+            base.Channel.UpdateApplicantSkill(pocos);
         }
         
-        public System.Threading.Tasks.Task UpdateApplicantSkillAsync(CareerCloud.Pocos.ApplicantSkillPoco[] items) {
-            return base.Channel.UpdateApplicantSkillAsync(items);
+        public System.Threading.Tasks.Task UpdateApplicantSkillAsync(CareerCloud.Pocos.ApplicantSkillPoco[] pocos) {
+            return base.Channel.UpdateApplicantSkillAsync(pocos);
         }
         
-        public void AddApplicantWorkHistory(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] items) {
-            base.Channel.AddApplicantWorkHistory(items);
+        public void AddApplicantWorkHistory(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] pocos) {
+            base.Channel.AddApplicantWorkHistory(pocos);
         }
         
-        public System.Threading.Tasks.Task AddApplicantWorkHistoryAsync(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] items) {
-            return base.Channel.AddApplicantWorkHistoryAsync(items);
+        public System.Threading.Tasks.Task AddApplicantWorkHistoryAsync(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] pocos) {
+            return base.Channel.AddApplicantWorkHistoryAsync(pocos);
         }
         
         public CareerCloud.Pocos.ApplicantWorkHistoryPoco[] GetAllApplicantWorkHistory() {
@@ -439,28 +439,28 @@ namespace CareerCloud.UnitTests.Assignment5.ApplicantService {
             return base.Channel.GetAllApplicantWorkHistoryAsync();
         }
         
-        public CareerCloud.Pocos.ApplicantWorkHistoryPoco GetSingleApplicantWorkHistory(string Id) {
-            return base.Channel.GetSingleApplicantWorkHistory(Id);
+        public CareerCloud.Pocos.ApplicantWorkHistoryPoco GetSingleApplicantWorkHistory(string id) {
+            return base.Channel.GetSingleApplicantWorkHistory(id);
         }
         
-        public System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantWorkHistoryPoco> GetSingleApplicantWorkHistoryAsync(string Id) {
-            return base.Channel.GetSingleApplicantWorkHistoryAsync(Id);
+        public System.Threading.Tasks.Task<CareerCloud.Pocos.ApplicantWorkHistoryPoco> GetSingleApplicantWorkHistoryAsync(string id) {
+            return base.Channel.GetSingleApplicantWorkHistoryAsync(id);
         }
         
-        public void RemoveApplicantWorkHistory(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] items) {
-            base.Channel.RemoveApplicantWorkHistory(items);
+        public void RemoveApplicantWorkHistory(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] pocos) {
+            base.Channel.RemoveApplicantWorkHistory(pocos);
         }
         
-        public System.Threading.Tasks.Task RemoveApplicantWorkHistoryAsync(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] items) {
-            return base.Channel.RemoveApplicantWorkHistoryAsync(items);
+        public System.Threading.Tasks.Task RemoveApplicantWorkHistoryAsync(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] pocos) {
+            return base.Channel.RemoveApplicantWorkHistoryAsync(pocos);
         }
         
-        public void UpdateApplicantWorkHistory(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] items) {
-            base.Channel.UpdateApplicantWorkHistory(items);
+        public void UpdateApplicantWorkHistory(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] pocos) {
+            base.Channel.UpdateApplicantWorkHistory(pocos);
         }
         
-        public System.Threading.Tasks.Task UpdateApplicantWorkHistoryAsync(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] items) {
-            return base.Channel.UpdateApplicantWorkHistoryAsync(items);
+        public System.Threading.Tasks.Task UpdateApplicantWorkHistoryAsync(CareerCloud.Pocos.ApplicantWorkHistoryPoco[] pocos) {
+            return base.Channel.UpdateApplicantWorkHistoryAsync(pocos);
         }
     }
 }

@@ -26,11 +26,20 @@ namespace CareerCloud.UnitTests.Assignment5
         private SecurityLoginsLogPoco _securityLoginLog;
         private SecurityRolePoco _securityRole;
         private SecurityLoginsRolePoco _securityLoginRole;
+        //ServiceHost applicantSvc = new ServiceHost(typeof(Applicant));
+        //ServiceHost companySvc = new ServiceHost(typeof(Company));
+        //ServiceHost securitySvc = new ServiceHost(typeof(Security));
+        //ServiceHost systemSvc = new ServiceHost(typeof(WCF.System));
 
         [TestInitialize]
         public void Init_Pocos()
         {
-            SystemCountry_Init();
+            //applicantSvc.Open();
+            //companySvc.Open();
+            //securitySvc.Open();
+            //systemSvc.Open();
+
+            SystemCountry_Init();   
             CompanyProfile_Init();
             SystemLangCode_Init();
             CompanyDescription_Init();
@@ -49,6 +58,15 @@ namespace CareerCloud.UnitTests.Assignment5
             ApplicantSkills_Init();
             AappliantWorkHistory_Init();
             ApplicantJobApplication_Init();
+        }
+
+        [TestCleanup]
+        public void Cleanup_Pocos()
+        {
+            //applicantSvc.Close();
+            //companySvc.Close();
+            //securitySvc.Close();
+            //systemSvc.Close();
         }
 
         #region PocoInitialization

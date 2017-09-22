@@ -145,12 +145,6 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CareerCloud.Pocos\CareerCloud.Pocos.csproj">
-      <Project>{8601D71B-67F4-47B1-BE11-9E7F3B9C8E1B}</Project>
-      <Name>CareerCloud.Pocos</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ApplicantService\" />
     <WCFMetadataStorage Include="Connected Services\CompanyService\" />
     <WCFMetadataStorage Include="Connected Services\SecurityService\" />
@@ -203,6 +197,12 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CareerCloud.Pocos\CareerCloud.Pocos.csproj">
+      <Project>{3cb3aaf1-acfd-4762-8bed-7972ac43dce3}</Project>
+      <Name>CareerCloud.Pocos</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
